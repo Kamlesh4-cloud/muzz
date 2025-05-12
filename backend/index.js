@@ -12,8 +12,9 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "*"
-}));
+    origin: 'https://muzz-iota.vercel.app',
+    credentials: true
+  }));
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/rooms", require("./routes/roomRoutes"));
 app.use("/api/songs", require("./routes/songRoutes"));
