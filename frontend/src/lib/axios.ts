@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://43.204.220.194:3001',
+    baseURL: import.meta.env.VITE_API_URL || 'https://muzz-1.onrender.com',
     headers: {
         'Content-Type': 'application/json',
     },

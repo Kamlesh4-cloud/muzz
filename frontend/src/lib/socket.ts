@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 // Create socket instance
-export const socket = io(import.meta.env.VITE_WS_URL || 'http://43.204.220.194:3001', {
+export const socket = io(import.meta.env.VITE_WS_URL || 'https://muzz-1.onrender.com', {
   autoConnect: true,
   reconnection: true,
   reconnectionAttempts: 5,
